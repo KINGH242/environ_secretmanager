@@ -11,6 +11,7 @@ class EnvironSecretManager:
     """
     Class to handle the retrieval of secrets from Google Secret Manager
     """
+
     def __init__(self, **kwargs) -> None:
         super().__init__()
         self.logger = logging.getLogger(__name__)
