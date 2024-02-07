@@ -9,9 +9,9 @@ in the final build files for production.
 ## Usage
 
 ```python
-from env_secrets import EnvSecrets
+from environ_secretmanager.env_secrets import EnvironSecretManager
 
-secrets = EnvSecrets(GOOGLE_CLOUD_PROJECT_ID="my-project-id")
+secrets = EnvironSecretManager(GOOGLE_CLOUD_PROJECT_ID="my-project-id")
 
 # To create a .env file with the secrets
 secrets.create_dot_env_file()
