@@ -6,6 +6,8 @@ import logging
 import environ
 from google.cloud import secretmanager
 
+__all__ = ["EnvironSecretManager"]
+
 
 class EnvironSecretManager:
     """
