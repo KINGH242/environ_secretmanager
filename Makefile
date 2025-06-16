@@ -62,7 +62,7 @@ test-single: ## runs tests with "single" markers
 qa: ## runs static analyses
 	poetry run flake8 environ_secretmanager
 	poetry run black --check .
-	poetry run ruff --fix .
+	poetry run ruff check --fix .
 
 format: ## runs code style and formatter
 	poetry run isort .
@@ -76,7 +76,7 @@ docs: ## build the documentation
 
 release: clean qa test format ## build dist version and release to pypi
 	poetry build
-	#poetry publish
+	poetry publish
 
 changelog: ## Update changelog
 	cz ch
