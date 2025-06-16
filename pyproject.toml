@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "environ_secretmanager"
 version = "0.1.0"
-description = ""
+description = "Get secrets from Google Cloud Secret Manager or Environment."
 authors = ["Hareem Adderley <hadderley@kingpinapps.com>"]
 readme = "README.md"
 packages = [{include = "environ_secretmanager"}]
