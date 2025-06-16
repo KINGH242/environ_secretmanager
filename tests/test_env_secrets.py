@@ -9,7 +9,7 @@ from environ_secretmanager.env_secrets import EnvironSecretManager
 def esm():
     with patch(
         "environ_secretmanager.env_secrets.secretmanager.SecretManagerServiceClient"
-    ) as mock_client:
+    ):
         yield EnvironSecretManager(GOOGLE_CLOUD_PROJECT_ID="test-project")
 
 
