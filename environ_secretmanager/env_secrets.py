@@ -1,6 +1,7 @@
 """
 Environments secrets manager
 """
+import os
 import logging
 
 import environ
@@ -31,9 +32,9 @@ class EnvironSecretManager:
 
     def get_env_secret(self, secret_id, version_id):
         """
-        Attempt to get secret from environment. If unsuccessful, query Google Secret Manager
+        Attempt to get secret from environment then .env file. If unsuccessful, query Google Secret Manager
         """
-        secret = self.env(secret_id, default=None)
+        secret = os.getenv(secret_id, self.env(secret_id, default=None))
 
         if secret is None:
             return self.access_secret_version(secret_id, version_id)
