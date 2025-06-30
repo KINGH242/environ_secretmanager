@@ -1,3 +1,9 @@
+## 0.1.4 (2025-06-30)
+
+### Fix
+
+- enhance get_env_secret to check environment variables before Google Secret Manager
+
 ## 0.1.3 (2025-06-16)
 
 ### Fix
