@@ -1,8 +1,8 @@
 """
 Environments secrets manager
 """
-import os
 import logging
+import os
 
 import environ
 from google.cloud import secretmanager
