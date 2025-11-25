@@ -1,4 +1,8 @@
-## 0.1.4 (2025-06-30)
+## 0.2.0 (2025-11-25)
+
+### Feat
+
+- enhance env_secrets.py with type hints and additional parameters for secret management
 
 ### Fix
 
