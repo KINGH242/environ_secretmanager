@@ -69,4 +69,4 @@ def test_create_dot_env_file(esm):
     esm.list_secrets = MagicMock(return_value=["A", "B"])
     esm.write_env_file = MagicMock()
     esm.create_dot_env_file()
-    esm.write_env_file.assert_called_once_with(["A", "B"])
+    esm.write_env_file.assert_called_once_with(["A", "B"], None)
