@@ -14,12 +14,12 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-google-cloud-secret-manager = "^2.18.0"
-django-environ = "^0.12.0"
+google-cloud-secret-manager = ">=2.18.0"
+django-environ = ">=0.12.0"
 
 [tool.poetry.group.dev.dependencies]
-black = ">=23.9.1,<25.0.0"
-commitizen = "^2.42.0"
+black = "*"
+commitizen = "*"
 faker = "*"
 flake8 = "*"
 pylint = "*"
