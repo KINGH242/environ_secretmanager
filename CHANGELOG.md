@@ -1,3 +1,9 @@
+## 0.2.1 (2026-02-21)
+
+### Fix
+
+- update dependency version constraints in pyproject.toml and add blank line in env_secrets.py
+
 ## 0.2.0 (2025-11-25)
 
 ### Feat
